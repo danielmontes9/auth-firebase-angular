@@ -10,13 +10,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { AuthComponent } from './modules/auth/auth.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    AuthComponent
+    AuthComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
