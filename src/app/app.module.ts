@@ -9,12 +9,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { RegisterComponent } from './modules/register/register.component';
+import { AuthComponent } from './modules/auth/auth.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
