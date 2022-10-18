@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { AuthComponent } from './modules/auth/auth.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
@@ -18,7 +20,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AppComponent,
     ToolbarComponent,
     AuthComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    BrowserAnimationsModule
+    MatMenuModule,
+    MatDividerModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

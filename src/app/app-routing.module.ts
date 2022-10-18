@@ -7,6 +7,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', loadChildren: () => import('./modules').then(m => m.HomeModule)},
   {path: 'auth', loadChildren: () => import('./modules').then(m => m.AuthModule)},
+  {path: 'dashboard', loadChildren: () => import('./modules').then(m => m.DashboardModule)},
   {path: '**', component: NotFoundComponent}
 ];
 
